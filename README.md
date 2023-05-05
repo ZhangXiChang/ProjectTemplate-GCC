@@ -24,7 +24,7 @@ Windows和Linux：
 MinGW：  
 1.生成项目  
 ```
-cmake -Bbuild -G "MinGW Makefiles" -DVCPKG_TARGET_TRIPLET="x64-mingw-static"
+cmake -Bbuild -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DVCPKG_TARGET_TRIPLET="x64-mingw-static"
 ```
 2.编译项目  
 ```
@@ -34,7 +34,7 @@ mingw32-make
 Windows：  
 1.生成项目  
 ```
-cmake -Bbuild -G "MinGW Makefiles"
+cmake -Bbuild -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
 ```
 2.编译项目  
 ```
@@ -44,7 +44,7 @@ cd ./build
 Linux：  
 1.生成项目  
 ```
-cmake -Bbuild -G "Unix Makefiles"
+cmake -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 ```
 2.编译项目  
 ```
