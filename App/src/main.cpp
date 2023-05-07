@@ -15,7 +15,7 @@ public:
     using Ptr = std::shared_ptr<App>;
     static Ptr MakePtr() { return std::make_shared<App>(); }
 };
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     App::Ptr app;
     try
