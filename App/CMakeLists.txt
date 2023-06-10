@@ -11,7 +11,7 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src PRIVATE_SRC)
 add_executable(${BUILD_TARGET_NAME}
     ${PRIVATE_SRC}
 )
-#头文件
+#目标头文件
 target_include_directories(${BUILD_TARGET_NAME} PRIVATE
 )
 #目标链接库
